@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "NfZErrtRC1PWMwN8YnZttZCcrStV9A6nVYjISeiifowj/TFKAI0ii/NsC/ir8yPgAyzdf2iS06XPtuIC28qa6g==",
+  "success": true,
+  "projectFilePath": "/Users/qkhan1/Qamar/Mosh_Docker/MultiApp/sample.UI/sample.UI.csproj",
+  "expectedPackageFiles": [
+    "/Users/qkhan1/.nuget/packages/flurl/3.0.2/flurl.3.0.2.nupkg.sha512",
+    "/Users/qkhan1/.nuget/packages/flurl.http/3.2.0/flurl.http.3.2.0.nupkg.sha512",
+    "/Users/qkhan1/.nuget/packages/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "/Users/qkhan1/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/qkhan1/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/qkhan1/.nuget/packages/system.text.encoding.codepages/4.5.1/system.text.encoding.codepages.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

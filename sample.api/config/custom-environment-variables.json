@@ -1,0 +1,5 @@
+{
+    "host" : "MYSQL_HOSTNAME",
+    "user" : "MYSQL_USER",
+    "pwd" : "MYSQL_PWD"
+}

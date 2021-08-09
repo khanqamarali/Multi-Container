@@ -1,0 +1,49 @@
+version: "3.8"
+services:     
+    aspnetui:
+      build: 
+        context: ./sample.UI        
+        dockerfile: aspnet.dockerfile
+      depends_on: 
+       - mysqldb
+      ports: 
+        - 5002:80
+      image: webui:v1    
+      environment:         
+        NODE_API : http://nodeapi:3001/ # You access one container from anorther using servie name
+      networks: 
+        - my-network  
+    nodeapi:
+      build: 
+        context: ./sample.api
+        dockerfile: node.dockerfile
+      ports: 
+        - 5003:3001        
+      image: nodeapi:v1  
+      environment: 
+        MYSQL_HOSTNAME : 'mysqldb'
+        MYSQL_USER : 'root'
+        MYSQL_PWD : 'password'        
+      networks: 
+        - my-network      
+    mysqldb:
+      image: mysql:8.0   
+      volumes: 
+        - dbdata:/var/lib/mysql
+      environment: 
+        MYSQL_DATABASE: ${MYSQL_DB}
+        MYSQL_USER: ${MYSQL_USR}
+        MYSQL_PASSWORD: ${MYSQL_PWD}       
+        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PWD}   
+      ports: 
+        - 3306:3306
+      networks: 
+        - my-network    
+# We need to define the volume        
+volumes: 
+  dbdata:    
+  sample.api:
+networks: 
+  my-network:
+    external: true
+

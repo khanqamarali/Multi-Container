@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/qkhan1/Qamar/Mosh_Docker/MultiApp/sample.UI/sample.UI.csproj": {}
+  },
+  "projects": {
+    "/Users/qkhan1/Qamar/Mosh_Docker/MultiApp/sample.UI/sample.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/qkhan1/Qamar/Mosh_Docker/MultiApp/sample.UI/sample.UI.csproj",
+        "projectName": "sample.UI",
+        "projectPath": "/Users/qkhan1/Qamar/Mosh_Docker/MultiApp/sample.UI/sample.UI.csproj",
+        "packagesPath": "/Users/qkhan1/.nuget/packages/",
+        "outputPath": "/Users/qkhan1/Qamar/Mosh_Docker/MultiApp/sample.UI/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/qkhan1/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://mrcooper.pkgs.visualstudio.com/_packaging/Originations/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Flurl": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "Flurl.Http": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
