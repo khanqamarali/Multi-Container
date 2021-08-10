@@ -31,10 +31,10 @@ services:
       volumes: 
         - dbdata:/var/lib/mysql
       environment: 
-        MYSQL_DATABASE: ${MYSQL_DB}
-        MYSQL_USER: ${MYSQL_USR}
-        MYSQL_PASSWORD: ${MYSQL_PWD}       
-        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PWD}   
+        MYSQL_DATABASE: 'appdb'
+        MYSQL_USER: 'user'
+        MYSQL_PASSWORD: 'userpwd'       
+        MYSQL_ROOT_PASSWORD: 'password'    
       ports: 
         - 3306:3306
       networks: 
